@@ -1,0 +1,42 @@
+body {
+  min-height: 100vh;
+  background: whitesmoke;
+  /* -------Cursor none pour retirer la souris/cursor ------ */
+  /* cursor: none;  */
+}
+nav {
+  width: 30%;
+  margin: 0 50px;
+  right: 0;
+  position: fixed;
+}
+ul {
+  display: flex;
+  color: aliceblue;
+  list-style: none;
+  justify-content: space-between;
+}
+a {
+  cursor: pointer;
+  color: black;
+}
+
+/* -----------------Mousemove-------------------- */
+.mouse {
+  position: absolute;
+  border-radius: 200px; 
+  transform: translate(-50%, -50%); /* Centre le cursor sur la souris*/
+  pointer-events: none;   /* - Pointer events permet de cliquer sur les liens à travers le mousemove sans changer les index.*/
+}
+#cursor {
+  height: 8px; /* Change la taille du cursor*/
+  width: 8px; /* Change la taille du cursor*/
+  background: gray;  /* Change la couleur du cursor*/
+  transition: 0.1s ease; /* Change le délai du suivi du cursor*/
+}
+#cursor-border {
+  height: 35px; /* Change la taille de la bordure du cursor*/
+  width: 35px; /* Change la taille de la bordure du cursor*/
+  border: 1px solid gray; /* Change la couleur de la bordure du cursor*/
+  transition: 0.11s ease; /* Change le délai du suivi de la bordure du cursor*/
+}
